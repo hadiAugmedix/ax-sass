@@ -1,0 +1,18 @@
+@function color($color, $tone: 'base') {
+  @return map-get(map-get($colors, $color), $tone);
+}
+
+
+// @each $color-key, $color-value in $colors {
+//   @each $tone-key, $tone-value in $color-value {
+//     @if $tone-key == base {
+//       .u-fill-#{$color-key} {
+//         background-color: $tone-value !important;
+//       }
+//     } @else {
+//       .u-fill-#{$color-key}-#{$tone-key} {
+//         background-color: $tone-value !important;
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,346 @@
+/**
+ * Global
+ --------------------------------------------------------------------------- */
+/**
+ * Color
+ --------------------------------------------------------------------------- */
+/**
+ * Breakpoint
+ --------------------------------------------------------------------------- */
+/** ========================================================================
+ * Reset
+ =========================================================================== */
+/** ========================================================================
+ * Base
+ =========================================================================== */
+/** ========================================================================
+ * Typography
+ =========================================================================== */
+/** ========================================================================
+ * State
+ =========================================================================== */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 600;
+}
+
+h3,
+.h3 {
+  font-size: 1rem;
+  letter-spacing: -0.03em;
+}
+
+p {
+  font-size: 0.875rem;
+  letter-spacing: -0.02em;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+small,
+.small {
+  font-size: 80%;
+}
+
+.is--full-width {
+  width: 100%;
+}
+
+.is--text-center {
+  text-align: center;
+}
+
+.is--text-right {
+  text-align: right;
+}
+
+.is--text-left {
+  text-align: left;
+}
+
+.is--float-left {
+  float: left;
+}
+
+.is--float-right {
+  float: right;
+}
+
+.is--show-small-only {
+  display: none;
+}
+@media (max-width: 639px) {
+  .is--show-small-only {
+    display: block;
+  }
+}
+
+.is--show-small-up {
+  display: none;
+}
+
+@media (max-width: 639px) {
+  .is--hide-small-only {
+    display: hide;
+  }
+}
+
+.is--show-medium-only {
+  display: none;
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  .is--show-medium-only {
+    display: block;
+  }
+}
+
+.is--show-medium-up {
+  display: none;
+}
+@media (min-width: 640px) {
+  .is--show-medium-up {
+    display: block;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .is--hide-medium-only {
+    display: hide;
+  }
+}
+
+@media (min-width: 640px) {
+  .is--hide-medium-up {
+    display: hide;
+  }
+}
+
+.is--show-large-only {
+  display: none;
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .is--show-large-only {
+    display: block;
+  }
+}
+
+.is--show-large-up {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .is--show-large-up {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .is--hide-large-only {
+    display: hide;
+  }
+}
+
+@media (min-width: 1024px) {
+  .is--hide-large-up {
+    display: hide;
+  }
+}
+
+.is--show-xlarge-only {
+  display: none;
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .is--show-xlarge-only {
+    display: block;
+  }
+}
+
+.is--show-xlarge-up {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .is--show-xlarge-up {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .is--hide-xlarge-only {
+    display: hide;
+  }
+}
+
+@media (min-width: 1200px) {
+  .is--hide-xlarge-up {
+    display: hide;
+  }
+}
+
+.is--show-xxlarge-only {
+  display: none;
+}
+
+.is--show-xxlarge-up {
+  display: none;
+}
+@media (min-width: 1440px) {
+  .is--show-xxlarge-up {
+    display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .is--hide-xxlarge-up {
+    display: hide;
+  }
+}

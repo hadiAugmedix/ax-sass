@@ -1,0 +1,16 @@
+@import "./function";
+@import "./mixin";
+@import "./settings";
+@import "./reset";
+@import "./base";
+@import "./typography";
+
+@import "./state";
+
+@mixin ax-everything() {
+  @include ax-reset();
+  @include ax-base();
+  @include ax-typography();
+
+  @include ax-state();
+}

@@ -1,0 +1,59 @@
+/** ========================================================================
+ * State
+ =========================================================================== */
+@mixin ax-state() {
+  .is--full-width {
+    width: 100%;
+  }
+
+  .is--text-center {
+    text-align: center;
+  }
+
+  .is--text-right {
+    text-align: right;
+  }
+
+  .is--text-left {
+    text-align: left;
+  }
+
+  .is--float-left {
+    float: left;
+  }
+
+  .is--float-right {
+    float: right;
+  }
+
+
+  @each $breakpoint, $value in $breakpoints {
+    .is--show-#{$breakpoint}-only {
+      display: none;
+
+      @include breakpoint(#{$breakpoint}-only) {
+        display: block;
+      }
+    }
+
+    .is--show-#{$breakpoint}-up {
+      display: none;
+
+      @include breakpoint(#{$breakpoint}-up) {
+        display: block;
+      }
+    }
+
+    .is--hide-#{$breakpoint}-only {
+      @include breakpoint(#{$breakpoint}-only) {
+        display: hide;
+      }
+    }
+
+    .is--hide-#{$breakpoint}-up {
+      @include breakpoint(#{$breakpoint}-up) {
+        display: hide;
+      }
+    }
+  }
+}

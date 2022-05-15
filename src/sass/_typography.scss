@@ -1,0 +1,73 @@
+/** ========================================================================
+ * Typography
+ =========================================================================== */
+
+@mixin ax-typography() {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    font-weight: $global-font-bold-weight;
+  }
+
+  h1,
+  .h1 {
+
+  }
+
+  h2,
+  .h2 {
+  }
+
+  h3,
+  .h3 {
+    font-size: rem(16);
+    letter-spacing: -0.03em;
+  }
+
+  h4,
+  .h4 {
+  }
+
+  h5,
+  .h5 {
+  }
+
+  h6,
+  .h6 {
+  }
+
+  p {
+    font-size: rem(14);
+    letter-spacing: -0.02em;
+  }
+
+  strong {
+    font-weight: $global-font-bold-weight;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  a {
+
+  }
+
+  u {
+    text-decoration: underline;
+  }
+
+  small,
+  .small {
+    font-size: 80%;
+  }
+}
