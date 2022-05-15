@@ -4,6 +4,7 @@
 @import "./reset";
 @import "./base";
 @import "./typography";
+@import "./modules/grid";
 
 @import "./state";
 
@@ -11,6 +12,7 @@
   @include ax-reset();
   @include ax-base();
   @include ax-typography();
+  @include ax-grid();
 
   @include ax-state();
 }
